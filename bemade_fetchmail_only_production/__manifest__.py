@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Fetchmail Only on production environment",
-    "version": "15.0.0.0.1",
+    "version": "16.0.0.0.0",
     "category": "Extra Tools",
     'summary': 'Fetchmail Only on production environment',
     "description": """
@@ -10,11 +10,11 @@
     "author": "Bemade",
     'website': 'https://www.bemade.org',
     "depends": [
-        'fetchmail',
+        'mail',
     ],
     "data": [
     ],
-    "auto_install": True,
+    "auto_install": False,
     "installable": True,
     'license': 'OPL-1'
 }

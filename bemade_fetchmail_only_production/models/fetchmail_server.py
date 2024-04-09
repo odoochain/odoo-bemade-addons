@@ -10,9 +10,10 @@ from urllib.parse import urlparse
 _logger = logging.getLogger(__name__)
 
 class fetchmail_server(models.Model):
+    _name = 'fetchmail.server'
     _inherit = 'fetchmail.server'
 
-    @api.model
+    # @api.model
     def fetch_mail(self):
         if urlparse(self.env['ir.config_parameter'].sudo().get_param('web.base.url')).netloc == \
                 urlparse('https://erp.durpro.com/').netloc:
